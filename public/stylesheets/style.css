@@ -1,0 +1,94 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gray;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Login */
+.login-content {
+  text-align: center;
+  margin-top: 200px;
+}
+
+#login-title {
+  font-family: "Mountains Of Christmas", seriff;
+  font-size: 500%;
+  
+}
+
+#login-input1 {
+
+}
+
+#login-input2 {
+  
+}
+
+#login-btn {
+  font-size: 200%;
+}
+
+/* Users Index */
+#title1 {
+  font-family: "Mountains Of Christmas", serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.index-nav {
+  font-family: "Barrio", system-ui;
+  vertical-align: baseline;
+}
+
+/* Friends */
+#title2 {
+  font-family: "Mountains Of Christmas", serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.friends-nav {
+  font-family: "Barrio", system-ui;
+}
+
+h2 {
+  
+}
+
+/* Media */
+#title3 {
+  font-family: "Mountains Of Christmas", serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.media-nav {
+  font-family: "Barrio", system-ui;
+}
+
+h2 {
+
+}
+
+/* Replies */
+#title4 {
+  font-family: "Mountains Of Christmas", serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.replies-nav {
+  font-family: "Barrio", system-ui;
+}
+
+h2 {
+
+}

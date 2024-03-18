@@ -5,7 +5,22 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #4ac3ef;
+}
+
+#logout-btn {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Barrio", system-ui;
+  font-size: 15px;
+  margin-top: 0px;
+  height: 0px;
+}
+
+h2 {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  margin-top: auto;
+  /* margin-bottom: 100px; */
 }
 
 /* Login */
@@ -29,66 +44,104 @@ a {
 }
 
 #login-btn {
-  font-size: 200%;
+ height: 40px;
+ width: 70px;
 }
 
 /* Users Index */
 #title1 {
   font-family: "Mountains Of Christmas", serif;
-  font-size: 50px;
-  text-align: center;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
   margin-top: auto;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
 }
 
 .index-nav {
   font-family: "Barrio", system-ui;
-  vertical-align: baseline;
+  font-size: 25px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  
+}
+
+
+#user-text {
+ position: absolute;
+ top: 35%;
+ left: 50%;
+ width: 700px;
+ height: 120px;
+ transform: translate(-50%, -50%);
+ line-height: 1;
+ border-radius: 25px;
 }
 
 /* Friends */
 #title2 {
   font-family: "Mountains Of Christmas", serif;
-  font-size: 50px;
-  text-align: center;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
   margin-top: auto;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
 }
 
 .friends-nav {
   font-family: "Barrio", system-ui;
-}
-
-h2 {
-  
+  font-size: 25px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
 }
 
 /* Media */
 #title3 {
   font-family: "Mountains Of Christmas", serif;
-  font-size: 50px;
-  text-align: center;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
   margin-top: auto;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
 }
 
 .media-nav {
   font-family: "Barrio", system-ui;
-}
-
-h2 {
-
+  font-size: 25px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  
 }
 
 /* Replies */
 #title4 {
   font-family: "Mountains Of Christmas", serif;
-  font-size: 50px;
-  text-align: center;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
   margin-top: auto;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
 }
 
 .replies-nav {
   font-family: "Barrio", system-ui;
-}
-
-h2 {
-
+  font-size: 25px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
 }

@@ -11,8 +11,8 @@ a {
 #logout-btn {
   display: flex;
   justify-content: flex-end;
-  font-family: "Barrio", system-ui;
-  font-size: 15px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 20px;
   margin-top: 0px;
   height: 0px;
 }
@@ -21,6 +21,10 @@ h2 {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   margin-top: auto;
   /* margin-bottom: 100px; */
+}
+
+#logout-tag {
+  color: rgba(0, 0, 0, 0.553)
 }
 
 /* Login */
@@ -46,6 +50,7 @@ h2 {
 #login-btn {
  height: 40px;
  width: 70px;
+ background-color: black;
 }
 
 /* Users Index */
@@ -69,7 +74,6 @@ h2 {
   height: 400px;
   
 }
-
 
 #user-text {
  position: absolute;

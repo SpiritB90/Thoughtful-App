@@ -77,13 +77,21 @@ h2 {
 
 #user-text {
  position: absolute;
- top: 35%;
+ top: 26.5%;
  left: 50%;
  width: 700px;
- height: 120px;
+ height: 90px;
  transform: translate(-50%, -50%);
  line-height: 1;
  border-radius: 25px;
+}
+
+#post-btn {
+  position: absolute;
+  left: 79.5%;
+  width: 5%;
+  margin-top: 7.5%;
+  border-radius: 5px;
 }
 
 /* Friends */
@@ -107,6 +115,24 @@ h2 {
   height: 400px;
 }
 
+#search-bar {
+  position: absolute;
+  left: 37%;
+  width: 19%;
+  height: 3%;
+  margin-top: 1%;
+  border-radius: 5px;
+}
+
+#search-btn {
+  position: absolute;
+  left: 57%;
+  width: 6%;
+  height: 3.6%;
+  margin-top: 1%;
+  border-radius: 5px;
+}
+
 /* Media */
 #title3 {
   font-family: "Mountains Of Christmas", serif;
@@ -128,6 +154,7 @@ h2 {
   height: 400px;
   
 }
+
 
 /* Replies */
 #title4 {

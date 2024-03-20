@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
-// const friendsCtrl = require('../controllers/friends')
+// const repliesCtrl = require('../controllers/replies')
 
 router.get('/', function(req, res) {
-    res.render('users/friends')
-})
+    res.render('users/favorites');
+  });
+
 
 module.exports = router

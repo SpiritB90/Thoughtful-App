@@ -3,12 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var methodOverride = require('method-override')
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var repliesRouter = require('./routes/replies')
+var homeRouter = require('./routes/home');
+var favoritesRouter = require('./routes/favorites')
 var mediaRouter = require('./routes/media')
-var friendsRouter = require('./routes/friends')
+var newRouter = require('./routes/new')
+var accountRouter = require('./routes/account')
 
 var app = express();
 
@@ -21,12 +23,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'))
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/replies', repliesRouter)
+app.use('/home', homeRouter);
+app.use('/favorites', favoritesRouter)
 app.use('/media', mediaRouter)
-app.use('/friends', friendsRouter)
+app.use('/new', newRouter)
+app.use('/account', accountRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

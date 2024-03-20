@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+
+<header>
+    <nav id="logout-btn">
+        <a id="logout-tag" href="/">Logout</a>
+    </nav>
+</header>
+
+<img id="new-bubble" src="/images/ConversationBubble.png" alt="Conversation Bubble">
+<h1 id="title2">ThoughtFUL...</h1>
+
+
+
+<h2>NEW ENTRY</h2>
+
+<form class="new-entries" action="/home">
+    <input id="new-title" type="text" name="title">
+    <br><input id="new-entry" type="text" name="content">
+    <button id="submit-btn" ><a href="/">Submit</a></button>
+</form>
+
+<nav class="new-nav">
+    <a href="/home">Home</a>
+    <a href="/favorites">Favorites</a>
+    <a href="/media">MEDIA</a>
+    <!-- <a href="/">Logout</a> -->
+</nav>
+
+<%- include('../partials/footer') %>

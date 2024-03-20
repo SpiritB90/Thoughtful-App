@@ -1,10 +1,12 @@
 <%- include('./partials/header') %>
 
   <div class="login-content">
+    <img id="login-bubble" src="/images/ConversationBubble.png" alt="Conversation Bubble">
     <h1 id="login-title">ThoughtFUL...</h1>
-    <input id="login-input1" type="text">
-    <br><input id="login-input2" type="text">
-    <br><br><button id="login-btn"><a href="/users">Login</a></button>
+    <input id="login-input1" name="Username" type="text">
+    <br><input id="login-input2" type="password">
+    <br><br><button id="login-btn"><a href="/home">Login</a></button>
+    <br><a id="account-link" href="/account">Create An Account</a>
   </div>
 
   <%- include('./partials/footer') %>

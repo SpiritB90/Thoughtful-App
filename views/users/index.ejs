@@ -18,6 +18,23 @@
     <!-- <a href="/">Logout</a> -->
 </nav>
 
+<tbody>
+    <% posts.forEach(function(p) { %>
+      <tr>
+        <td><%= p.title %></td>
+        <td><%= p.content %></td>
+        <td><%= p.links %></td>
+        <td><%= p.comments %></td>
+        <form action="/home/<%= p._id %>?_method=PUT" method="POST" >
+            <button type="submit">Update</button>
+        </form>
+        <form action="/home/<%= p._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete Post</button>
+        </form>
+      </tr>
+      <% }); %>
+</tbody>
+
 
 
 <%- include('../partials/footer') %>

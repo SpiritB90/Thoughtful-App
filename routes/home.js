@@ -5,17 +5,20 @@ var postCtrl = require('../controllers/posts')
 
 
 /* GET users listing. */
-router.get('/', function(req, res) {
-  res.render('users/index')
-});
+// router.get('/', function(req, res) {
+//   res.render('users/index')
+// });
 
 router.get('/', postCtrl.index)
 
-// router.put('/:id', postCtrl.update)
+router.put('/:id', postCtrl.update)
 
-router.delete('/id', postCtrl.delete)
+router.delete('/:id', postCtrl.delete)
 
-// router.post('/', postsCtrl.create)
+router.post('/', postCtrl.create)
+
+
+// router.get('/:id', postCtrl.show)
 
 
 module.exports = router;

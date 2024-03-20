@@ -6,6 +6,6 @@ router.get('/', function(req, res) {
     res.render('account')
 })
 
-// router.get('/,', userCtrl.index)
+router.post('/', userCtrl.create)
 
 module.exports = router

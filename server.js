@@ -4,6 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override')
+require('dotenv').config()
+require('./config/database')
 
 var indexRouter = require('./routes/index');
 var homeRouter = require('./routes/home');
@@ -11,6 +13,7 @@ var favoritesRouter = require('./routes/favorites')
 var mediaRouter = require('./routes/media')
 var newRouter = require('./routes/new')
 var accountRouter = require('./routes/account')
+var editRouter = require('routes/edit')
 
 var app = express();
 
@@ -31,6 +34,7 @@ app.use('/favorites', favoritesRouter)
 app.use('/media', mediaRouter)
 app.use('/new', newRouter)
 app.use('/account', accountRouter)
+app.use('/edit', editRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

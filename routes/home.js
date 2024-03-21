@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var postCtrl = require('../controllers/posts')
+var commentCtrl = require('../controllers/comments')
 
 
 
@@ -16,6 +17,10 @@ router.put('/:id', postCtrl.update)
 router.delete('/:id', postCtrl.delete)
 
 router.post('/', postCtrl.create)
+
+router.post('/:id/comment', commentCtrl.create)
+
+router.delete('/:id/comment', commentCtrl.delete)
 
 
 // router.get('/:id', postCtrl.show)

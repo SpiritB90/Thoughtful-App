@@ -18,18 +18,28 @@
     <!-- <a href="/">Logout</a> -->
 </nav>
 
-<tbody>
+<tbody id="post-table" >
     <% posts.forEach(function(p) { %>
       <tr>
-        <td><%= p.title %></td>
-        <td><%= p.content %></td>
-        <td><%= p.links %></td>
-        <td><%= p.comments %></td>
-        <form action="/home/<%= p._id %>?_method=PUT" method="POST" >
-            <button type="submit">Update</button>
-        </form>
-        <form action="/home/<%= p._id %>?_method=DELETE" method="POST">
-            <button type="submit">Delete Post</button>
+        <td id="post-title" ><%= p.title %></td>
+        <br><br><td id="post-content" ><%= p.content %></td>
+        <td id="post-links" ><a href="<%= p.links %>"><%= p.links %></a></td>
+        <td><%= p.createdAt.toISOString() %></td>
+        <% p.comments.forEach(comment => { %>
+            <td id="post-comments">
+                <%= comment.content %>
+                <%= comment.createdAt.toISOString() %>
+                <form action="/home/<%= comment._id %>/comment?_method=DELETE" method="POST">
+                    <button id="delete-btn" type="submit">Delete Comment</button>
+            </td> 
+            <% } ) %>
+        <form action="/home/<%= p._id %>/comment" method="POST"><input name="content" type="text">
+            <button type="submit">Submit</button></form>
+        <br><br><a href="/edit/<%= p._id %>" method="GET">
+            <button id="update-btn" type="submit">Update</button>
+      </a>
+        <br><form action="/home/<%= p._id %>?_method=DELETE" method="POST">
+            <button id="delete-btn" type="submit">Delete Post</button>
         </form>
       </tr>
       <% }); %>

@@ -1,8 +1,8 @@
 <%- include('../partials/header') %>
 
-<form action="posts/<%=post._id%>" method="POST">
-    <input type="text">
-    <input type="text" name="" id="">
+<form action="/edit/<%=post._id%>" method="POST">
+    <input type="text" name="title" value="<%= post.title %>">
+    <input type="text" name="content" id="" value="<%= post.content %>" >
     <button type="submit">Update</button>
 </form>
 

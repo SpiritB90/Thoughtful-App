@@ -13,7 +13,7 @@ var favoritesRouter = require('./routes/favorites')
 var mediaRouter = require('./routes/media')
 var newRouter = require('./routes/new')
 var accountRouter = require('./routes/account')
-var editRouter = require('routes/edit')
+var editRouter = require('./routes/edit')
 
 var app = express();
 

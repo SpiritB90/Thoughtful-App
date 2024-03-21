@@ -21,13 +21,8 @@
 <tbody>
     <% posts.forEach(function(p) { %>
       <tr>
-        <td><%= p.links %></td>
-            <form action="/media/<%= p._id %>?_method=PUT" method="POST" >
-                <button type="submit">Update</button>
-            </form>
-            <form action="/media/<%= p._id %>?_method=DELETE" method="POST">
-                <button type="submit">Delete Post</button>
-            </form>
+        <td><a href="<%= p.links %>"><%= p.links %></a></td>
+        <td><%= p.createdAt.toISOString() %></td>
       </tr>
       <% }); %>
 </tbody>

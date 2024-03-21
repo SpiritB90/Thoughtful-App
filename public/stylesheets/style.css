@@ -159,6 +159,41 @@ h2 {
   height: 100px;
 }
 
+#post-table {
+  display: flex;
+  justify-content: center;
+}
+
+#post-title {
+  display: flex;
+  justify-content: center;
+  left: 50%;
+}
+
+#post-content {
+  position: absolute;
+  left: 50%;
+}
+
+#post-links {
+  position: absolute;
+  left: 50%;
+}
+
+#post-comments {
+  position: absolute;
+  left: 50%;
+}
+
+#update-btn {
+  position: absolute;
+  left: 50%;
+}
+#delete-btn {
+  position: absolute;
+  left: 50%;
+}
+
 /* New Entry */
 #title2 {
   font-family: "Mountains Of Christmas", serif;
@@ -195,15 +230,23 @@ h2 {
 
 #new-entry {
   background-color: rgba(178, 197, 197, 0.698);
+  margin-bottom: 8px;
   width: 200%;
   height: 300px;
 }
 
+#new-link {
+  background-color: rgba(178, 197, 197, 0.698);
+  width: 200%;
+  height: 25px;
+}
+
 #submit-btn {
   /* position: absolute; */
-  left: 350px;
+  left: 340px;
   height: 40px;
   width: 70px;
+  color: aqua;
   background-color: black;
   margin-bottom: 10px;
   border-radius: 5px;

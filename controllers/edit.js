@@ -1,4 +1,4 @@
-const Post = require('..models/post')
+const Post = require('../models/post')
 
 module.exports = {
     edit,
@@ -11,6 +11,7 @@ async function edit(req, res) {
 }
 
 async function updatePost(req, res) {
-    const post = await Post.findbyIdAndUpdate(req.params.id, req.body)
-    res.redirect('/home', {post})
+    console.log(req.body)
+    const post = await Post.findByIdAndUpdate(req.params.id, req.body)
+    res.redirect('/home')
 }

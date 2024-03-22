@@ -13,13 +13,13 @@
 
 <div id="media-post" >
     <% posts.forEach(function(p, index) { %>
-        <a href="<%= p.links %>"><%= p.links %></a>
+        <div id="post-link" ><a href="<%= p.links %>"><%= p.links %></a></div>
         <% if (p.links.length > 0) { %>
-            <br><br><%= p.createdAt.toISOString() %>
+            <br><br><div id="date1" ><%= new Date() %></div>
             <% if (previews && index !== undefined && previews[index] && previews[index].success) { %>
                 <div class="preview">
                     <h3><%= previews[index].hostnameMetaTag %></h3>
-                    <p><%= previews[index].ogSiteName %></p>
+                    <p><%= previews[index].ogTitle %></p>
                     <img src="<%= previews[index].favicon %>" alt="<%= previews[index].favicon %>">
                     <% if (previews[index].image) { %>
                         <img src="<%= previews[index].image.url %>" alt="<%= previews[index].alt %>">
@@ -29,6 +29,7 @@
                 <p>No preview available for this post</p>
             <% } %>
         <% } %> 
+        <hr>
         <br><br><br><br>
       <% }); %>
 </div>

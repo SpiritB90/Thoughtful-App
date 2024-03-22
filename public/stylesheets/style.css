@@ -23,7 +23,7 @@ body {
   width: 100%;
   height: 110%;
   filter: blur(2.5px);
-  filter: opacity(0.58);
+  filter: opacity(0.38);
   top: -20px;
 
 
@@ -46,7 +46,7 @@ a {
 h2 {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   margin-top: auto;
-  color: white;
+  color: black;
   /* margin-bottom: 100px; */
 }
 
@@ -59,7 +59,7 @@ h2 {
 .login-content {
   /* position: absolute; */
   text-align: center;
-  left: 50%;
+  left: 40%;
   margin-top: 200px;
 }
 
@@ -69,7 +69,7 @@ h2 {
   position: relative;
   margin-top: 20px;
   margin-bottom: 15px;
-  color: white;
+  color: black;
   
 }
 
@@ -115,7 +115,7 @@ h2 {
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: white;
+  color: black;
 }
 
 #account-bubble {
@@ -125,38 +125,41 @@ h2 {
   height: 100px;
 }
 
-.account-deatils {
-  position: absolute;
-}
+
 
 #username {
   background-color: rgba(178, 197, 197, 0.698);
   position: absolute;
-  left: 35%;
+  left: 40%;
+  margin-top: 130px;
 }
 
 #password {
   background-color: rgba(178, 197, 197, 0.698);
   position: absolute;
-  left: 35%;
-  margin-top: 60px;
+  left: 40.35%;
+  margin-top: 170px;
 }
 
 #email {
   background-color: rgba(178, 197, 197, 0.698);
   position: absolute;
-  left: 37.5%;
-  margin-top: 100px;
+  left: 43%;
+  margin-top: 210px;
 }
 
 #signup-btn {
-  position: relative;
+  position: absolute;
+  margin-top: 250px;
+  left: 53%;
   height: 40px;
   width: 70px;
   background-color: black;
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
+
 
 
 /* Home Index */
@@ -167,7 +170,7 @@ h2 {
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: white;
+  color: black;
 }
 
 .index-nav {
@@ -190,10 +193,12 @@ h2 {
 
 #index-post {
   position: absolute;
-  color: white;
+  /* background-color: rgba(0, 0, 0, 0.212); */
+  color: black;
   left: 25%;
   right: 20%;
   margin-top: 20px;
+  margin-bottom: 0;
   /* font-size: 24px; */
 }
 
@@ -202,7 +207,7 @@ h2 {
   height: 32px;
   width: 105px;
   color: #7ac6e2;
-  background-color: white;
+  background-color: black;
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -218,7 +223,7 @@ h2 {
 }
 
 #delete-post {
-  display: inline-block;
+  /* display: inline-block; */
   margin-top: 0px;
   left: 340px;
   height: 32px;
@@ -230,7 +235,7 @@ h2 {
 }
 
 #update-btn {
-  display: inline-block;
+  /* display: inline-block; */
   left: 340px;
   height: 32px;
   width: 60px;
@@ -243,6 +248,7 @@ h2 {
 #comment-input {
   position: absolute;
   left: 40%;
+  margin-top: 0;
   
   /* width: 40px; */
 }
@@ -252,13 +258,15 @@ h2 {
 }
 
 #post-title {
-  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 35px;
   /* background-color: aqua; */
 }
 
 #post-content {
-  padding-top: 0px;
-  font-size: 20px;
+  font-weight: 520;
+  font-size: 25px;
   /* background-color: rgba(0, 255, 255, 0.495); */
   /* margin-top: 0px; */
 }
@@ -268,7 +276,21 @@ h2 {
 }
 
 #post-link {
+  font-size: large;
+}
 
+#comment-text {
+  font-size: 19px;
+}
+
+#date1 {
+  font-size: large;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+#date{
+  color: rgb(201, 198, 198);
 }
 
 /* New Entry */
@@ -279,7 +301,7 @@ h2 {
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: white;
+  color: black;
 }
 
 .new-nav {
@@ -294,7 +316,7 @@ h2 {
 
 .new-entries {
   position: absolute;
-  color: white;
+  color: black;
   left: 33%;
   margin-top: 40px;
 }
@@ -337,6 +359,18 @@ h2 {
   height: 100px;
 }
 
+#newTitle-header {
+  font-size: x-large;
+}
+
+#newContent-header {
+  font-size: x-large;
+}
+
+#newLink-header {
+  font-size: x-large;
+}
+
 /* Media */
 #title3 {
   font-family: "Mountains Of Christmas", serif;
@@ -345,7 +379,7 @@ h2 {
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: white;
+  color: black;
 }
 
 .media-nav {
@@ -369,7 +403,7 @@ h2 {
 #media-post {
   position: absolute;
   left: 25%;
-  color: white;
+  color: rgb(118, 211, 211);
 }
 
 
@@ -382,7 +416,7 @@ h2 {
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 0px;
-  color: white;
+  color: black;
 }
 
 .help-nav {
@@ -402,4 +436,59 @@ h2 {
   height: 100px;
 }
 
+.help-instructions {
+  position: absolute;
+  left: 20%;
+  color: black;
+}
 
+#instructions {
+  color: black;
+}
+
+#new-help {
+  color: white;
+}
+
+#favorite-help {
+  color: white;
+}
+
+#home-help {
+  color: white;
+}
+
+#media-help {
+  color: white;
+}
+
+/* Edit */
+#edit-form {
+  position: absolute;
+  left: 37%;
+  margin-top: 60px;
+}
+
+#update-title {
+  background-color: rgba(178, 197, 197, 0.698);
+  margin-bottom: 10px;
+  width: 250%;
+  height: 30px;
+}
+
+#update-content {
+  background-color: rgba(178, 197, 197, 0.698);
+  margin-bottom: 8px;
+  width: 250%;
+  height: 300px;
+}
+
+#edit-submit {
+  left: 340px;
+  height: 40px;
+  width: 70px;
+  color: aqua;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

@@ -14,15 +14,15 @@
 <h2>NEW ENTRY</h2>
 
 <form class="new-entries" action="/new" method="POST">
-    <h4>Title</h4><input id="new-title" type="text" name="title">
+    <h4 id="newTitle-header" >Title</h4><input id="new-title" type="text" name="title">
     <!-- <select name="mood">
         <option value="G">G</option>
         <option value="PG">PG</option>
         <option value="PG-13">PG-13</option>
         <option value="R">R</option>
       </select> -->
-    <br><h4>Contnet</h4><input id="new-entry" type="text" name="content">
-    <br><h4>Link</h4><input id="new-link" type="text" name="links">
+    <br><h4 id="newContent-header" >Content</h4><input id="new-entry" type="text" name="content" autofocus>
+    <h4 id="newLink-header" >Link</h4><input id="new-link" type="text" name="links">
     <button id="submit-btn" >Submit</button>
 </form>
 

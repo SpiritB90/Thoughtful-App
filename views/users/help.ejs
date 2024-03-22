@@ -1,21 +1,54 @@
 <%- include('../partials/header') %>
 
-<header>
-    <nav id="logout-btn">
-        <a id="logout-tag" href="/">Logout</a>
+    <header>
+        <nav id="logout-btn">
+            <a id="logout-tag" href="/">Logout</a>
+        </nav>
+    </header>
+
+    <img id="help-bubble" src="/images/ConversationBubble.png" alt="Conversation Bubble">
+    <h1 id="title4">ThoughtFUL</h1>
+
+    <h2>HELP</h2>
+
+    <div class="help-instructions" >
+    <h1>Welcome to ThoughtFUL..</h1>
+    <br>
+    <h2 id="instructions" >
+
+        Thank you for choosing ThoughtFUL, your personal digital journal designed to help you keep track of your
+        thoughts, ideas, and important memories. Whether it's a fleeting idea or a profound reflection, ThoughtFUL is
+        here to capture and organize your thoughts seamlessly.
+
+        Here's a quick guide to get you started:
+
+        <br><br><div id="new-help" >New Entry</div>Begin your journey by heading over to the New Entry page. This is where you can submit your
+        first entry and start documenting your thoughts. Simply click on the "New Entry" button to begin.
+
+        <br><br><div id="favorite-help" >Favorite Site</div>As you navigate through your thoughts, feel free to add links to some of your favorite websites.
+        ThoughtFUL allows you to integrate these links directly into your entries, making it easier for you to access
+        relevant content whenever you need it.
+
+        <br><br><div id="home-help" >Home Pag</div>After submitting your entry, you'll be directed to the Home Page. Here, you'll find a showcase of all
+        your entries, neatly organized for easy reference. From profound reflections to everyday musings, your thoughts
+        will find a home on this page.
+
+        <br><br><div id="media-help" >Media Section</div>In addition to text entries, ThoughtFUL also offers a Media Section where you can store images,
+        videos, and other media files. This allows for quicker access to multimedia content associated with your
+        thoughts and memories.
+
+        <br><br>We hope you find joy and fulfillment in creating new memories with ThoughtFUL. Let your thoughts flow freely and
+        embrace the journey of self-reflection and discovery.
+
+        If you have any questions or need assistance, don't hesitate to reach out to our support team. Happy journaling!
+    </h2>
+    </div>
+
+    <nav class="help-nav">
+        <a href="/home">Home</a>
+        <a href="/new">New Entry</a>
+        <a href="/media">Media</a>
+        <!-- <a href="/">Logout</a> -->
     </nav>
-</header>
 
-<img id="help-bubble" src="/images/ConversationBubble.png" alt="Conversation Bubble">
-<h1 id="title4">ThoughtFUL</h1>
-
-<h2>HELP</h2>
-
-<nav class="help-nav">
-    <a href="/home">Home</a>
-    <a href="/new">New Entry</a>
-    <a href="/media">Media</a>
-    <!-- <a href="/">Logout</a> -->
-</nav>
-
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>

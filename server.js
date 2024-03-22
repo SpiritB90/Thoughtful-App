@@ -9,7 +9,7 @@ require('./config/database')
 
 var indexRouter = require('./routes/index');
 var homeRouter = require('./routes/home');
-var favoritesRouter = require('./routes/favorites')
+var helpRouter = require('./routes/help')
 var mediaRouter = require('./routes/media')
 var newRouter = require('./routes/new')
 var accountRouter = require('./routes/account')
@@ -30,7 +30,7 @@ app.use(methodOverride('_method'))
 
 app.use('/', indexRouter);
 app.use('/home', homeRouter);
-app.use('/favorites', favoritesRouter)
+app.use('/help', helpRouter)
 app.use('/media', mediaRouter)
 app.use('/new', newRouter)
 app.use('/account', accountRouter)

@@ -7,24 +7,36 @@
 </header>
 
 <img id="media-bubble" src="/images/ConversationBubble.png" alt="Conversation Bubble">
-<h1 id="title3">ThoughtFUL...</h1>
+<h1 id="title3">ThoughtFUL</h1>
 
 <h2>MEDIA</h2>
+
+<div id="media-post" >
+    <% posts.forEach(function(p, index) { %>
+        <a href="<%= p.links %>"><%= p.links %></a>
+        <% if (p.links.length > 0) { %>
+            <br><br><%= p.createdAt.toISOString() %>
+            <% if (previews && index !== undefined && previews[index] && previews[index].success) { %>
+                <div class="preview">
+                    <h3><%= previews[index].hostnameMetaTag %></h3>
+                    <p><%= previews[index].ogSiteName %></p>
+                    <img src="<%= previews[index].favicon %>" alt="<%= previews[index].favicon %>">
+                    <% if (previews[index].image) { %>
+                        <img src="<%= previews[index].image.url %>" alt="<%= previews[index].alt %>">
+                    <% } %>
+                </div>
+            <% } else { %>
+                <p>No preview available for this post</p>
+            <% } %>
+        <% } %> 
+        <br><br><br><br>
+      <% }); %>
+</div>
 
 <nav class="media-nav">
     <a href="/home">Home</a>
     <a href="/new">New Entry</a>
-    <a href="/favorites">Favorites</a>
+    <a href="/help">Help</a>
     <!-- <a href="/">Logout</a> -->
 </nav>
-
-<tbody>
-    <% posts.forEach(function(p) { %>
-      <tr>
-        <td><a href="<%= p.links %>"><%= p.links %></a></td>
-        <td><%= p.createdAt.toISOString() %></td>
-      </tr>
-      <% }); %>
-</tbody>
-
 <%- include('../partials/footer') %>

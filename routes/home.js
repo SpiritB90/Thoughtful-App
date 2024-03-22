@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var postCtrl = require('../controllers/posts')
 var commentCtrl = require('../controllers/comments')
+var previewCtrl = require('../controllers/previews')
+
 
 
 
@@ -21,6 +23,8 @@ router.post('/', postCtrl.create)
 router.post('/:id/comment', commentCtrl.create)
 
 router.delete('/:id/comment', commentCtrl.delete)
+
+// router.get('/', previewCtrl.preview)
 
 
 // router.get('/:id', postCtrl.show)

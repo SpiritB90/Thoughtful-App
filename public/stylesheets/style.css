@@ -1,11 +1,36 @@
 body {
   padding: 50px;
+  margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: gray;
 }
 
+.container {
+  overflow: auto;
+  position: relative;
+}
+
+.container ::before {
+  /* filter: opacity(0.8); */
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  content: '';
+  display: block;
+  background-image: url('../images/letters.jpg');
+  /* background-size: cover; */
+  width: 100%;
+  height: 110%;
+  filter: blur(2.5px);
+  filter: opacity(0.58);
+  top: -20px;
+
+
+}
+
 a {
-  color: #4ac3ef;
+  color: #7ac6e2;
 }
 
 #logout-btn {
@@ -15,16 +40,18 @@ a {
   font-size: 20px;
   margin-top: 0px;
   height: 0px;
+  color: black;
 }
 
 h2 {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   margin-top: auto;
+  color: white;
   /* margin-bottom: 100px; */
 }
 
 #logout-tag {
-  color: rgba(0, 0, 0, 0.553)
+  color: black
 }
 
 
@@ -40,7 +67,9 @@ h2 {
   font-family: "Mountains Of Christmas", seriff;
   font-size: 500%;
   position: relative;
-  margin-bottom: 10;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: white;
   
 }
 
@@ -73,7 +102,7 @@ h2 {
 
 #login-bubble {
   position: absolute;
-  left: 65%;
+  left: 64%;
   margin-top: 0px;
   height: 100px;
 }
@@ -84,15 +113,15 @@ h2 {
   font-size: 45px;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 0px;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 #account-bubble {
-  /* position: absolute; */
-  /* left: 65%; */
-  /* margin-top: 0%; */
+  position: absolute;
+  left: 60%;
+  margin-top: 0px;
   height: 100px;
 }
 
@@ -136,9 +165,9 @@ h2 {
   font-size: 45px;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 0px;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .index-nav {
@@ -154,44 +183,92 @@ h2 {
 
 #home-bubble {
   position: absolute;
-  left: 65%;
+  left: 60%;
   margin-top: 0px;
   height: 100px;
 }
 
-#post-table {
-  display: flex;
-  justify-content: center;
-}
-
-#post-title {
-  display: flex;
-  justify-content: center;
-  left: 50%;
-}
-
-#post-content {
+#index-post {
   position: absolute;
-  left: 50%;
+  color: white;
+  left: 25%;
+  right: 20%;
+  margin-top: 20px;
+  /* font-size: 24px; */
 }
 
-#post-links {
-  position: absolute;
-  left: 50%;
+#index-submit {
+  left: 340px;
+  height: 32px;
+  width: 105px;
+  color: #7ac6e2;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-#post-comments {
-  position: absolute;
-  left: 50%;
+#delete-comment {
+  left: 340px;
+  height: 32px;
+  width: 117px;
+  color: #7ac6e2;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#delete-post {
+  display: inline-block;
+  margin-top: 0px;
+  left: 340px;
+  height: 32px;
+  width: 85px;
+  color: #7ac6e2;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 #update-btn {
-  position: absolute;
-  left: 50%;
+  display: inline-block;
+  left: 340px;
+  height: 32px;
+  width: 60px;
+  color: #7ac6e2;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
-#delete-btn {
+
+#comment-input {
   position: absolute;
-  left: 50%;
+  left: 40%;
+  
+  /* width: 40px; */
+}
+
+#comment-input2 {
+  width: 200px;
+}
+
+#post-title {
+  font-size: 30px;
+  /* background-color: aqua; */
+}
+
+#post-content {
+  padding-top: 0px;
+  font-size: 20px;
+  /* background-color: rgba(0, 255, 255, 0.495); */
+  /* margin-top: 0px; */
+}
+
+#index-submit {
+  background-color: black;
+}
+
+#post-link {
+
 }
 
 /* New Entry */
@@ -200,9 +277,9 @@ h2 {
   font-size: 45px;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 0px;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .new-nav {
@@ -217,6 +294,7 @@ h2 {
 
 .new-entries {
   position: absolute;
+  color: white;
   left: 33%;
   margin-top: 40px;
 }
@@ -254,7 +332,7 @@ h2 {
 
 #new-bubble {
   position: absolute;
-  left: 65%;
+  left: 60%;
   margin-top: 0px;
   height: 100px;
 }
@@ -265,9 +343,9 @@ h2 {
   font-size: 45px;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 0px;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .media-nav {
@@ -283,25 +361,31 @@ h2 {
 
 #media-bubble {
   position: absolute;
-  left: 65%;
+  left: 60%;
   margin-top: 0px;
   height: 100px;
 }
 
+#media-post {
+  position: absolute;
+  left: 25%;
+  color: white;
+}
 
 
-/* Favorites */
+
+/* Help */
 #title4 {
   font-family: "Mountains Of Christmas", serif;
   font-size: 45px;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 0px;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
-.favorites-nav {
+.help-nav {
   font-family: "Barrio", system-ui;
   font-size: 25px;
   margin-top: 100px;
@@ -311,9 +395,9 @@ h2 {
   height: 400px;
 }
 
-#favorites-bubble {
+#help-bubble {
   position: absolute;
-  left: 65%;
+  left: 60%;
   margin-top: 0px;
   height: 100px;
 }

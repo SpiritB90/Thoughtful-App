@@ -7,43 +7,43 @@
 </header>
 
 <img id="home-bubble" src="/images/ConversationBubble.png" alt="Conversation Bubble">
-<h1 id="title1">ThoughtFUL...</h1> 
+<h1 id="title1">ThoughtFUL</h1> 
 
 <h2>HOME</h2>
 
-<nav class="index-nav">
-    <a href="/new">New Entry</a>
-    <a href="/favorites">Favorites</a>
-    <a href="/media">Media</a>
-    <!-- <a href="/">Logout</a> -->
-</nav>
+<div id="index-post" >
+    <% posts.reverse().forEach(function(p) { %>
+        <div id="post-title"><%= p.title %></div>
+        <div id="post-content"><br><br><%= p.content %></div>
+        <div id="post-link"><br><a href="<%= p.links %>"><%= p.links %></a></div>
 
-<tbody id="post-table" >
-    <% posts.forEach(function(p) { %>
-      <tr>
-        <td id="post-title" ><%= p.title %></td>
-        <br><br><td id="post-content" ><%= p.content %></td>
-        <td id="post-links" ><a href="<%= p.links %>"><%= p.links %></a></td>
-        <td><%= p.createdAt.toISOString() %></td>
-        <% p.comments.forEach(comment => { %>
-            <td id="post-comments">
+        <br><br><%= p.createdAt.toISOString() %>
+        <br><br><% p.comments.forEach(comment => { %>
                 <%= comment.content %>
                 <%= comment.createdAt.toISOString() %>
                 <form action="/home/<%= comment._id %>/comment?_method=DELETE" method="POST">
-                    <button id="delete-btn" type="submit">Delete Comment</button>
-            </td> 
+                    <button id="delete-comment" type="submit">Delete Comment</button></form>
             <% } ) %>
-        <form action="/home/<%= p._id %>/comment" method="POST"><input name="content" type="text">
-            <button type="submit">Submit</button></form>
-        <br><br><a href="/edit/<%= p._id %>" method="GET">
-            <button id="update-btn" type="submit">Update</button>
-      </a>
-        <br><form action="/home/<%= p._id %>?_method=DELETE" method="POST">
-            <button id="delete-btn" type="submit">Delete Post</button>
-        </form>
-      </tr>
-      <% }); %>
-</tbody>
+        <br><form id="comment-input" action="/home/<%= p._id %>/comment" method="POST"><input id="comment-input2" name="content" type="text">
+            <button id="index-submit" type="submit">Add Comment</button></form>
+            <a href="/edit/<%= p._id %>">
+                <button id="update-btn" type="submit">Update</button>
+            </a>
+            <form action="/home/<%= p._id %>?_method=DELETE" method="POST">
+                <button id="delete-post" type="submit">Delete Post</button>
+                <br><br><br>
+            </form>
+      <% }); %>      
+</div>  
+   
+<nav class="index-nav">
+    <a href="/new">New Entry</a>
+    <a href="/media">Media</a>
+    <a href="/help">Help</a>
+    <!-- <a href="/">Logout</a> -->
+</nav>
+
+
 
 
 

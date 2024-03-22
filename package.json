@@ -15,6 +15,7 @@
     "method-override": "^3.0.0",
     "mongodb": "^6.5.0",
     "mongoose": "^8.2.2",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "open-graph-scraper": "^6.5.0"
   }
 }

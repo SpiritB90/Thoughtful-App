@@ -15,7 +15,7 @@
     <% posts.forEach(function(p, index) { %>
         <div id="post-link" ><a href="<%= p.links %>"><%= p.links %></a></div>
         <% if (p.links.length > 0) { %>
-            <br><br><div id="date1" ><%= new Date() %></div>
+            <br><br><div id="date1" ><%= new Date().toDateString %></div>
             <% if (previews && index !== undefined && previews[index] && previews[index].success) { %>
                 <div class="preview">
                     <h3><%= previews[index].hostnameMetaTag %></h3>

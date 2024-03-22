@@ -27,10 +27,6 @@ const postSchema = new Schema({
             }
         }
     },
-    mood: {
-        type: String,
-        enum: ['🙂', '😔', '😎', '😆', '😀', '😢', '']
-    },
     content: {
         type: String,
         required: true,

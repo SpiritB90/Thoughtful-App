@@ -17,7 +17,7 @@
         <!-- <div id="post-enum"><%= p.enum %></div> -->
         <div id="post-content"><br><br><%= p.content %></div>
         <div id="post-link"><br><a href="<%= p.links %>"><%= p.links %></a></div>
-        <br><div id="date1" ><%= new Date().toDateString %></div>
+        <!-- <br><div id="date1" ><%= new Date().toDateString %></div> -->
         
         <br><form id="comment-input" action="/home/<%= p._id %>/comment" method="POST"><input id="comment-input2" name="content" type="text">
             <button id="index-submit" type="submit">Add Comment</button></form>
@@ -29,7 +29,7 @@
         
                 <br><br><br><% p.comments.forEach(comment => { %>
                 <div id="comment-text" ><%= comment.content %></div>
-                <div id="date" ><%= new Date().toDateString %></div>
+                <!-- <div id="date" ><%= new Date().toDateString %></div> -->
                 <br><form action="/home/<%= comment._id %>/comment?_method=DELETE" method="POST">
                     <button id="delete-comment" type="submit">Delete Comment</button></form>
             <% } ) %>

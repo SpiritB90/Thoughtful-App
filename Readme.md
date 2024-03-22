@@ -13,7 +13,7 @@ ThoughtFUL is a digital journaling app designed to help you keep track of your t
 * VS Code
 * Heroku
 * Github
-* Imgugr
+* Imgur
 * rawpixel.com on Freepik
 
 ## Start you journey with ThoughtFUL here ⬇️
